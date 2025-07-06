@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>INFRADOCKERS 2025 - MODULO III</title>
-   
+  <meta charset="UTF-8" />
+  <title>InfraDockers 2025 - local </title>
+  <link rel="icon" type="image/svg+xml" href="InfraDockers.svg" />
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ffffff, #898989, #ffffff);
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #ffffff, #000000);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+      color: #1b0059;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      flex-direction: column;
+      position: relative;
     }
 
-    .container {
-      text-align: center;
+    .content {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .logo {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .names {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1.12em;
       animation: fadeIn 2s ease-in-out;
     }
 
-    h1 {
-      font-size: 4em;
-      margin: 0;
-      background: linear-gradient(90deg, #00c6ff, #4dff00);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      font-size: 1.5em;
-      color: #1b0059;
-      margin-top: 10px;
+    .watermark {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1em;
+      color: rgba(27, 0, 89, 0.3);
+      user-select: none;
     }
 
     @keyframes fadeIn {
@@ -44,14 +59,19 @@
   </style>
 </head>
 <body>
-  <img src="InfraDockers.svg" alt="INFRADOCKERS Logo" class="logo">
-  <div class="container">
-   
-    <p>Ines Quiroga Castro</p>
-    <p>Roy William Mendez Villalba</p>
-    <p>Miguel Angel Machuca</p>
-    <p>Jorge Luis Torres</p>
-    <p>Jose Cesar Sañez</p>
+  <div class="content">
+    <img src="InfraDockers.svg" alt="INFRADOCKERS Logo" class="logo" />
+    <div class="names">
+      <p>Ines Quiroga Castro</p>
+      <p>Roy William Mendez Villalba</p>
+      <p>Miguel Angel Machuca</p>
+      <p>Jorge Luis Torres</p>
+      <p>Jose Cesar Sañez</p>
+    </div>
+  </div>
+  
+  <div class="watermark">
+    © InfraDockers 2025.
   </div>
 </body>
 </html>
